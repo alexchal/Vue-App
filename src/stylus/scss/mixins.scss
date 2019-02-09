@@ -1,0 +1,13 @@
+$ipadPro-width-min: 1024px;
+$ipadPro-width-max: 1366px;
+
+/* IpadPro Portrait*/
+
+@mixin ipadPro {
+  @media (min-width: #{$ipadPro-width-min}) 
+  and (max-width: #{$ipadPro-width-max})
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    @content;
+  }
+}
